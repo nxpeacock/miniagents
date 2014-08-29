@@ -1,0 +1,64 @@
+<template name="defaultLayout">
+    <div class="metro">
+        <div class="container">
+            <header id="header">
+                {{> yield region='TopMenu'}}
+            </header>
+        </div>
+    </div>
+</template>
+
+<template name="TopMenu">
+    <nav class="navigation-bar white border fixed-top">
+        <div class="navigation-bar-content container">
+            <a class="element" href="/"><span class="icon-grid-view"></span> MINI AGENT CHAT <sup>0.0</sup></a>
+            <span class="element-divider"></span>
+
+            <a href="#" class="pull-menu"></a>
+            <ul class="element-menu">
+                <li>
+                    <a href="{{pathFor 'visitor'}}" class="{{isActivePath 'khach-vieng-tham'}}">
+                        <span class="icon-rocket"></span>
+                        Khách viếng thăm</a>
+                </li>
+                <li>
+                    <a href="{{pathFor 'history'}}" class="{{isActivePath 'lich-su-chat'}}">
+                        <span class="icon-clock"></span>
+                        Lịch sử chát
+                    </a>
+                </li>
+                <li>
+                    <a href="{{pathFor 'agents'}}" class="{{isActivePath 'nhan-vien'}}">
+                        <span class="icon-user-3"></span>
+                        Nhân viên
+                    </a>
+                </li>
+                <li>
+                    <a href="{{pathFor 'report'}}" class="{{isActivePath 'bao-cao'}}">
+                        <span class="icon-stats"></span>
+                        Báo cáo
+                    </a>
+                </li>
+            </ul>
+
+            <div class="no-tablet-portrait">
+
+                <div class="element place-right">
+                    <a href="#" class="dropdown-toggle">
+                        <span class="icon-cog"></span>
+                    </a>
+                    <ul data-role="dropdown" class="dropdown-menu place-right">
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Download</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Buy Now</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</template>
+
+<template name="notFound">
+
+</template>

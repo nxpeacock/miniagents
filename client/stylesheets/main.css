@@ -1,0 +1,13 @@
+body {
+    background: radial-gradient(100% 100% at center center , #fff, #fff) repeat scroll 0 0 #fff;
+    color: #666;
+    font-weight: 400;
+    line-height: 20px;
+}
+body,a{
+    font-family: Arial,Helvetica,sans-serif !important;
+}
+
+.metro .navigation-bar .element-menu > li > a.active {
+    box-shadow: 0 -0.2em 0 #1BA1E2 inset;
+}
