@@ -2,6 +2,7 @@ Router.configure({
     layoutTemplate: 'defaultLayout',
     notFoundTemplate: 'notFound',
     yieldTemplates : {
+        'SideMenu' : {to : 'SideMenu'},
         'TopMenu' : {to : 'TopMenu'}
     }
 });
@@ -24,5 +25,11 @@ Router.map(function(){
     });
     this.route('departments',{
         path : '/nhan-vien/phong-ban'
-    })
+    });
+    this.route('reports',{
+        path : '/bao-cao'
+    });
+    this.route('configs',{
+        path : '/cau-hinh'
+    });
 })

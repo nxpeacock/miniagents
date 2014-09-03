@@ -8,11 +8,13 @@ mizzao:user-status
 arunoda:streams
 accounts-base
 accounts-password
-chrismbeckett:metro-ui2
 jquery
 iron:router
 mrt:iron-router-progress
 zimme:iron-router-active
 digilord:roles
 gfk:notifications
+aldeed:collection2
+chrismbeckett:fontawesome4
+mizzao:bootstrap-3
 
