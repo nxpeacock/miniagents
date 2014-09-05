@@ -1,17 +1,30 @@
 <template name="departments">
-    <a href="#" class="button success" id="btnAddNew">
-        <i class="icon-plus on-left"></i>
-        Thêm bộ phận
-    </a>
-<table class="table">
-    <thead>
-    <tr>
-        <th class="text-left">Tên bộ phận</th>
-        <th class="text-left">Số Agents</th>
-        <th class="text-right"></th>
-    </tr>
-    </thead>
-</table>
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+            <ol class="breadcrumb">
+                <li><a href="{{pathFor 'home'}}"><i class="fa fa-home fa-fw"></i></a></li>
+                <li><a href="#"><i class="fa fa-users fa-fw"></i></a></li>
+                <li class="active"><i class="fa fa-building-o fa-fw"></i> Bộ phận</li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+            <a href="#" class="btn btn-success" id="btnAddNew">
+                <i class="fa fa-plus-circle fa-fw"></i>
+                Thêm bộ phận
+            </a>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th class="text-left">Tên bộ phận</th>
+                    <th class="text-left">Số Agents</th>
+                    <th class="text-right"></th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
 </template>
 <template name="department_Edit">
 
