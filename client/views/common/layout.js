@@ -39,3 +39,52 @@ Template.defaultLayout.rendered = function(){
 Template.SideMenu.rendered = function(){
     $('#side-menu').metisMenu();
 };
+
+getDialogButton_save_close = function(){
+    return [
+        {
+            id : 'btnDlg_Save',
+            label : ' Lưu lại',
+            icon : 'fa fa-floppy-o',
+            cssClass : 'btn btn-primary'
+        },
+        {
+            label : ' Đóng',
+            icon : 'fa fa-power-off',
+            cssClass : 'btn btn-danger',
+            action : function(dlg){
+                dlg.close();
+            }
+        }
+    ]
+};
+getConfirmButtons = function(Yes,No){
+    if(Yes === undefined) Yes = 'Có';
+    if(No === undefined) No = 'Không';
+    return [
+        {
+            id : 'btnConfirm_Yes',
+            label : Yes,
+            icon : 'fa fa-floppy-o',
+            cssClass : 'btn btn-primary'
+        },
+        {
+            label : No,
+            icon : 'fa fa-power-off',
+            cssClass : 'btn btn-danger',
+            action : function(dlg){
+                dlg.close();
+            }
+        }
+    ]
+};
+getNormalDialogButton = function(){
+    return [{
+        label : 'Đóng',
+        icon : 'fa fa-power-off',
+        cssClass : 'btn btn-danger',
+        action : function(dlg){
+            dlg.close();
+        }
+    }]
+};

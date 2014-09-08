@@ -3,7 +3,7 @@
         <div class="col-md-12 col-lg-12">
             <ol class="breadcrumb">
                 <li><a href="{{pathFor 'home'}}"><i class="fa fa-home fa-fw"></i></a></li>
-                <li><a href="#"><i class="fa fa-users fa-fw"></i></a></li>
+                <li><a href="{{pathFor 'agents'}}"><i class="fa fa-users fa-fw"></i></a></li>
                 <li class="active"><i class="fa fa-building-o fa-fw"></i> Bộ phận</li>
             </ol>
         </div>
@@ -17,15 +17,22 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <th class="text-left">Tên bộ phận</th>
-                    <th class="text-left">Số Agents</th>
-                    <th class="text-right"></th>
+                    <th>Tên bộ phận</th>
+                    <th>Số Agents</th>
+                    <th></th>
                 </tr>
                 </thead>
+                <tbody>
+
+                </tbody>
             </table>
         </div>
     </div>
 </template>
-<template name="department_Edit">
-
+<template name="department_Form">
+    <div class="row">
+        <div class="col-md-6 col-lg-12">
+            <input type="text" class="form-control" placeholder="Tên bộ phận - phòng ban" id="txtDepartmentName"/>
+        </div>
+    </div>
 </template>
